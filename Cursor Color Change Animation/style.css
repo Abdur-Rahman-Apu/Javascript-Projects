@@ -1,0 +1,39 @@
+body {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+.main h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    animation: cursor 5s infinite;
+
+}
+
+@keyframes cursor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
